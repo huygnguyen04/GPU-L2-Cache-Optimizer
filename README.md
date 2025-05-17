@@ -1,10 +1,9 @@
 # GPU-L2-Cache-Optimizer
 
-## 📄 [**Final Report**](./HuyNguyen_L2Cache_FinalReport.pdf) - Full analysis of cache scaling experiments, architectural insights, and hardware modeling.
-
-## 📄 [**Research Proposal**](./HuyNguyen_Research_Proposal.pdf) - Initial background, motivation, and project plan.
-
-## 🎞️ [**Presentation Slides**](https://docs.google.com/presentation/d/1fhQBrdnbD1-Ip40FcdpEZ-8poqQesz_WVgXzYtwDN4A/edit?usp=sharing) - Slide deck covering methodology and key results.
+## 📑 Documentation
+### 📄 [**Final Report**](./HuyNguyen_L2Cache_FinalReport.pdf) - Full analysis of cache scaling experiments, architectural insights, and hardware modeling.
+### 📄 [**Research Proposal**](./HuyNguyen_Research_Proposal.pdf) - Initial background, motivation, and project plan.
+### 🎞️ [**Presentation Slides**](https://docs.google.com/presentation/d/1fhQBrdnbD1-Ip40FcdpEZ-8poqQesz_WVgXzYtwDN4A/edit?usp=sharing) - Slide deck covering methodology and key results.
 
 ---
 
@@ -14,15 +13,11 @@ This project explores the simulation and optimization of extended L2 cache archi
 **Advisor**: Prof. Kevin Skadron  
 **Department of Computer Science, University of Virginia**
 
----
-
 ## 🔍 Project Overview
 
 Modern GPU workloads in high-performance computing (HPC) and machine learning frequently encounter memory bottlenecks due to limited on-chip L2 cache capacity. This project investigates the performance and efficiency impact of extending L2 cache size by adjusting associativity and set count.
 
 Benchmarks from the Rodinia suite—including **BFS**, **K-Means**, **Gaussian Elimination**, **Needleman-Wunsch**, **LU Decomposition**, and **DWT2D**—are analyzed using **GPGPU-Sim**, with cache energy/area modeled using **CACTI 6.5**.
-
----
 
 ## 🚀 Key Contributions
 
@@ -34,8 +29,6 @@ Benchmarks from the Rodinia suite—including **BFS**, **K-Means**, **Gaussian E
   - Gains plateau beyond 2–4× L2 size increases.
 - **Hardware Cost**: Larger caches increase area and dynamic energy by 2–2.5×, necessitating workload-aware cache sizing.
 
----
-
 ## 🧪 Tools & Benchmarks
 
 - **Simulator**: GPGPU-Sim v4.0 (Volta V100 config)
@@ -43,8 +36,6 @@ Benchmarks from the Rodinia suite—including **BFS**, **K-Means**, **Gaussian E
 - **Benchmarks**:
   - Memory-bound: BFS, KMeans, Gaussian, NW, LUD, DWT2D
   - Compute-bound (control): Nearest Neighbor, Pathfinder
-
----
 
 ## 📈 Results Summary
 
@@ -54,8 +45,6 @@ Extending L2 cache size yielded up to **50% performance improvement** for memory
 - **Set count scaling**: Best for large spatially-reused datasets (e.g., KMeans, DWT2D).
 - **Tradeoff**: Quadrupling L2 size significantly increases area/energy (~2.5×), so optimization must consider system constraints.
 
----
-
 ## 🔮 Future Work
 
 - Extend analysis to **PPA (performance-per-area)** and **ED² (energy-delay²)** metrics
@@ -64,6 +53,10 @@ Extending L2 cache size yielded up to **50% performance improvement** for memory
 - Explore **software-level optimizations** (prefetching, data placement)
 - Test on **ML workloads** like CNNs and Transformers
 - Use **Roofline modeling** for further compute-bound analysis
+
+## 📝 License
+
+This project is licensed under the [MIT License](LICENSE) - see the LICENSE file for details.
 
 ---
 
