@@ -1,23 +1,19 @@
 # GPU-L2-Cache-Optimizer
 
 ## 📑 Documentation
+
 ### 📄 [**Final Report**](./HuyNguyen_L2Cache_FinalReport.pdf) - Full analysis of cache scaling experiments, architectural insights, and hardware modeling.
 ### 📄 [**Research Proposal**](./HuyNguyen_Research_Proposal.pdf) - Initial background, motivation, and project plan.
 ### 🎞️ [**Presentation Slides**](https://docs.google.com/presentation/d/1fhQBrdnbD1-Ip40FcdpEZ-8poqQesz_WVgXzYtwDN4A/edit?usp=sharing) - Slide deck covering methodology and key results.
 
----
+## 🔍 Project Overview
+
 
 This project explores the simulation and optimization of extended L2 cache architectures in GPUs using **GPGPU-Sim**, with the goal of improving performance for memory-bound CUDA workloads. It combines architectural experimentation, benchmark profiling, and area-energy tradeoff analysis to guide future GPU memory hierarchy design.
 
 **Author**: Huy G Nguyen  
 **Advisor**: Prof. Kevin Skadron  
 **Department of Computer Science, University of Virginia**
-
-## 🔍 Project Overview
-
-Modern GPU workloads in high-performance computing (HPC) and machine learning frequently encounter memory bottlenecks due to limited on-chip L2 cache capacity. This project investigates the performance and efficiency impact of extending L2 cache size by adjusting associativity and set count.
-
-Benchmarks from the Rodinia suite—including **BFS**, **K-Means**, **Gaussian Elimination**, **Needleman-Wunsch**, **LU Decomposition**, and **DWT2D**—are analyzed using **GPGPU-Sim**, with cache energy/area modeled using **CACTI 6.5**.
 
 ## 🚀 Key Contributions
 
