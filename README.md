@@ -2,7 +2,7 @@
 
 ## 📑 Documentation
 
-### 📄 [**Final Report**](./HuyNguyen_L2Cache_FinalReport.pdf) - Full analysis of cache scaling experiments, architectural insights, and hardware modeling.
+### 📄 [**Final Report**](https://drive.google.com/file/d/1bnj3lVTmmjsZ-c9gJl_UhUW7wr3oCc2J/view?usp=sharing) - Full analysis of cache scaling experiments, architectural insights, and hardware modeling.
 ### 📄 [**Research Proposal**](./HuyNguyen_Research_Proposal.pdf) - Initial background, motivation, and project plan.
 ### 🎞️ [**Presentation Slides**](https://docs.google.com/presentation/d/1fhQBrdnbD1-Ip40FcdpEZ-8poqQesz_WVgXzYtwDN4A/edit?usp=sharing) - Slide deck covering methodology and key results.
 
